@@ -1,0 +1,709 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-model href="RNG_JulesVernes_Chap10.rng" type="application/xml" 
+   schematypens="http://relaxng.org/ns/structure/1.0"?>
+<?xml-model href="RNG_JulesVernes_Chap10.rng" type="application/xml" 
+   schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TEI xmlns="http://www.tei-c.org/ns/1.0">
+   
+   <teiHeader>
+      <fileDesc>
+         <titleStmt>
+            <title>Le Tour du Monde en 80 jours</title>
+            <title type="sub">Où Passepartout est trop heureux d'être quitte en perdant sa
+               chaussure.</title>
+            <author ref="https://catalogue.bnf.fr/ark:/12148/cb11928016k">
+               <persName xml:id="JV">
+                  <forename>Jules</forename>
+                  <surname>Verne</surname>
+               </persName>
+            </author>
+            <respStmt>
+               <resp>Encodage réalisé dans le cadre du contrôle terminal du cours de XML TEI du
+                  Master TNAH</resp>
+               <name>
+                  <forename>Clara</forename>
+                  <surname>Hermant-Bertoni</surname>
+               </name>
+            </respStmt>
+         </titleStmt>
+         <publicationStmt>
+            <publisher>Le Temps</publisher>
+            <pubPlace>
+               <address>
+                  <country key="FR"/>
+                  <settlement type="city">Paris</settlement>
+                  <postCode>75009</postCode>
+                  <district type="arrondissement">9e</district>
+                  <street>Rue du Faubourg-Montmartre, <num>10</num>
+                  </street>
+               </address>
+            </pubPlace>
+            <date when-iso="1872-11-10">10 novembre 1872</date>
+            <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k225190n"> Gallica Bibliothèque
+               nationale de France</distributor>
+            <availability>
+               <licence
+                  target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                  >Domaine public</licence>
+            </availability>
+         </publicationStmt>
+         <sourceDesc>
+            <biblFull>
+               <titleStmt>
+                  <title>Le Tour du Monde en 80 jours</title>
+                  <author ref="https://catalogue.bnf.fr/ark:/12148/cb11928016k">
+                     <forename>Jules</forename>
+                     <surname>Verne</surname>
+                  </author>
+               </titleStmt>
+               <publicationStmt>
+                  <publisher>Le Temps</publisher>
+                  <pubPlace>
+                     <address>
+                        <country key="FR"/>
+                        <settlement type="city">Paris</settlement>
+                        <postCode>75009</postCode>
+                        <district type="arrondissement">9e</district>
+                        <street>Rue Faubourg-Montmartre, <num>10</num>
+                        </street>
+                     </address>
+                  </pubPlace>
+                  <date when-iso="1872-11-10">10 novembre 1872</date>
+                  <distributor facs="https://gallica.bnf.fr/ark:/12148/bpt6k225190n"> Gallica
+                     Bibliothèque nationale de France</distributor>
+                  <availability>
+                     <licence
+                        target="https://gallica.bnf.fr/edit/und/conditions-dutilisation-des-contenus-de-gallica"
+                        >Domaine public</licence>
+                  </availability>
+               </publicationStmt>
+               <seriesStmt>
+                  <title>Le Tour du Monde en 80 jours</title>
+                  <biblScope unit="book">Le Tour du Monde en 80 jours</biblScope>
+                  <biblScope unit="chapter">X</biblScope>
+                  <biblScope unit="titlechapter">Où Passepartout est trop heureux d'être quitte en perdant sa
+                     chaussure.</biblScope>
+                  <biblScope unit="page" n="1">pp. 1</biblScope>
+               </seriesStmt>
+            </biblFull>
+         </sourceDesc>
+      </fileDesc>
+      <encodingDesc>
+         <projectDesc>
+            <p>Encodage réalisé dans le cadre du cours XML TEI du Master 2 TNAH</p>
+         </projectDesc>
+         <p>Cet encodage a été réalisé à partir de la numérisation disponible sur Gallica du
+            roman-feuilleton Le Tour du Monde en 80 jours, écrit par Jules Verne et paru dans le
+            journal parisien le Temps du 6 novembre au 22 décembre 1872. Le chapitre 10 du roman a
+            été transcrit fidèlement, tel qu'il parait dans le journal le 10 novembre 1872, à
+            l'exception des césures de fin de ligne propres à l'édition et de quelques signes de
+            ponctuation.</p>
+      </encodingDesc>
+      <profileDesc>
+         <creation>
+            <date when-iso="1872">1872</date>
+            <country key="FR">France</country>
+            <lang xml:lang="fr"/>
+         </creation>
+         <particDesc>
+            <listPerson>
+               <person xml:id="Mr_Fogg" sex="male">
+                  <persName>Phileas Fogg</persName>
+                  <note>Phileas Fogg est le personnage central du Tour du monde, à côté du
+                     domestique et ancien acrobate de cirque Jean <persName ref="#Passepartout"
+                        >Passepartout</persName>. Au début du roman, Fogg a environ quarante ans et
+                     est fort bel homme. Célibataire, il vit seul à Londres avec son domestique, qui
+                     l'accompagne dans son périple. Gentleman, il porte le titre d'esquire et
+                     appartient à l'upper middle class. C'est un héros de sang froid, méthodique,
+                     maniaque, caractérisé par un mode de vie d'une effrayante régularité. Pour
+                     cette raison, l'auteur le compare à une montre ou à un automate. </note>
+               </person>
+               <person xml:id="Fix" sex="male">
+                  <persName>Fix</persName>
+                  <note> Fix est un détective anglais alléché par la prime offerte pour la capture
+                     du voleur de la Banque d'Angleterre, qui est chargé d'en retrouver le voleur.
+                     La description de ce dernier lui fait vite soupçonner, en voyant <persName
+                        ref="#Mr_Fogg">Phileas Fogg</persName>, que les deux hommes ne font qu'un et
+                     que le gentleman n'a accepté le pari de faire le tour du monde en un temps
+                     donné que pour masquer sa fuite à l'étranger.</note>
+               </person>
+               <person xml:id="Passepartout" sex="male">
+                  <persName>Jean Passepartout</persName>
+                  <note>Français qui a à peu près 30 ans, très musclé et d'une force herculéenne,
+                     Jean Passepartout a exercé divers métiers avant de s'installer comme valet dans
+                     une maison bourgeoise londonienne. Après plusieurs essais, il apprend que
+                        <persName ref="#Mr_Fogg">Phileas Fogg</persName> vient de congédier son
+                     domestique et, connaissant la vie sédentaire et très régulière que mène ce
+                     dernier, il décide de se présenter chez lui. Fidèle, courageux et possède une
+                     présence d'esprit très développée. </note>
+               </person>
+               <person xml:id="Maitre_d_hotel" sex="male">
+                  <persName>Maitre d'hôtel</persName>
+               </person>
+            </listPerson>
+         </particDesc>
+         <settingDesc>
+            <listPlace>
+               <place xml:id="Inde" type="country">
+                  <placeName>
+                     <name>Inde</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>none</region>
+                  </placeName>
+               </place>
+               <place xml:id="Calcutta" type="city">
+                  <placeName>
+                     <name>Calcutta</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord-Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Madras" type="city">
+                  <placeName>
+                     <name>Madras</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Sud de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Bombay" type="city">
+                  <placeName>
+                     <name>Bombay</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Ouest de l'Inde</region>
+                  </placeName>
+                  <note>Capitale de l'Inde.</note>
+               </place>
+               <place xml:id="Bengale" type="region">
+                  <placeName>
+                     <name>Bengale</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Est de l'inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Agra" type="city">
+                  <placeName>
+                     <name>Agra</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Indus" type="river">
+                  <placeName>
+                     <name>Indus</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Sud-Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Gange" type="river">
+                  <placeName>
+                     <name>Gange</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Allahabad" type="city">
+                  <placeName>
+                     <name>Allahabad</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Salcette" type="region">
+                  <placeName>
+                     <name>Salcette</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Sud-Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Tannah" type="city">
+                  <placeName>
+                     <name>Tannah</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord-Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Ghates" type="mountain">
+                  <placeName>
+                     <name>Ghâtes occidentales</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Burhampour" type="city">
+                  <placeName>
+                     <name>Burhampour</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord-Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Bundelkund" type="region">
+                  <placeName>
+                     <name>Bundelkund</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Inde centrale</region>
+                  </placeName>
+               </place>
+               <place xml:id="Benares" type="city">
+                  <placeName>
+                     <name>Bénarès</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Burdivan" type="city">
+                  <placeName>
+                     <name>Burdivan</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>Purba Bardhaman</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord-Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Chandernagor" type="city">
+                  <placeName>
+                     <name>Chandernagor</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Est de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Malebar-hill" type="district">
+                  <placeName>
+                     <name>Malebar-hill</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>Sud de Bombay</settlement>
+                        <postCode>400006</postCode>
+                        <district>Malebar-hill</district>
+                        <street>none</street>
+                     </address>
+                     <region>Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Elephanta" type="island">
+                  <placeName>
+                     <name>Eléphanta</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>Baie de Bombay</settlement>
+                        <postCode>none</postCode>
+                        <district>Raigad</district>
+                        <street>none</street>
+                     </address>
+                     <region>Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Kanherie" type="caves">
+                  <placeName>
+                     <name>Grottes Kanhérie</name>
+                     <address>
+                        <country key="IND"/>
+                        <settlement>Salcette</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Ouest de l'Inde</region>
+                  </placeName>
+               </place>
+               <place xml:id="Suez" type="harbour">
+                  <placeName>
+                     <name>Suez</name>
+                     <address>
+                        <country key="EGY"/>
+                        <settlement>none</settlement>
+                        <postCode>none</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord de l'Egypte</region>
+                  </placeName>
+               </place>
+               <place xml:id="Paris" type="city">
+                  <placeName>
+                     <name>Paris</name>
+                     <address>
+                        <country key="FR"/>
+                        <settlement>none</settlement>
+                        <postCode>75000</postCode>
+                        <district>none</district>
+                        <street>none</street>
+                     </address>
+                     <region>Nord de la France</region>
+                  </placeName>
+                  <note>Capitale de la France</note>
+               </place>
+            </listPlace>
+         </settingDesc>
+      </profileDesc>
+   </teiHeader>
+   <text>
+      <body>
+         <div type="book">
+            <head>LE TOUR DU MONDE EN 80 JOURS</head>
+            <div type="chapter" n="10">
+               <head>X</head>
+               <div type="chaptertitle">
+                  <head>OU PASSEPARTOUT EST TROP HEUREUX D'EN ÊTRE QUITTE EN PERDANT SA
+                     CHAUSSURE</head>
+                  <p>Personne n'ignore que l'Inde, ce grand triangle renversé dont la base est au
+                     nord et la pointe au sud, comprend une superficie de quatorze cent mille milles
+                     carrés, sur laquelle est inégalement répandue une population de cent
+                     quatre-vingt millions d'habitants. Le gouvernement britannique exerce une
+                     domination réelle sur une certaine partie de cet immense pays; il entretient un
+                     gouverneur général à <placeName ref="#Calcutta">Calcutta</placeName>, des
+                     gouverneurs à <placeName ref="#Madras">Madras</placeName>, à <placeName
+                        ref="#Bombay">Bombay</placeName>, au <placeName ref="#Bengale"
+                        >Bengale</placeName>, et un lieutenant-gouverneur à <placeName ref="#Agra"
+                        >Agra</placeName>.</p>
+                  <p>Mais l'<placeName ref="#Inde">Inde</placeName> anglaise proprement dite ne
+                     compte qu'une superficie de sept cent mille milles carrés et une population de
+                     cent à cent dix millions d'habitants. C'est assez dire qu'une notable partie du
+                     territoire échappe encore à l'autorité de la reine; et, en effet, chez certains
+                     rajahs de l'intérieur, farouches et terribles, l'indépendance indoue est encore
+                     absolue.</p>
+                  <p>Depuis 1756,– époque àlaquelle fut fondé le premier établissement anglais sur
+                     l'emplacement aujourd'hui occupé par la ville de <placeName ref="#Madras"
+                        >Madras</placeName>, jusqu'à cette année dans laquelle éclata la grande
+                     insurrection des cipayes, la célèbre Compagnie des Indes fut toute-puissante.
+                     Elle s'annexait peu à peu les diverses provinces, achetées auy rajahs aux prix
+                     de rentes qu'elle payait peu ou point; elle nommait son gouverneur-général et
+                     tous ses employés civils ou militaires mais maintenant, elle n'existe plus, et
+                     les possessions anglaises de l'<placeName ref="#Inde">Inde</placeName> relèvent
+                     directement de la couronne.</p>
+                  <p>Aussi l'aspect, les mœurs, les divisions ethnographiques de la péninsule
+                     tendent à se modifier chaque jour. Autrefois, on y voyageait par tous les
+                     antiques moyens de transport, à pied, à cheval, en charrette, en brouette, en
+                     palanquin, à dos d'homme en coacht, etc. Maintenant, des steam-boats parcourent
+                     à grande vitesse l'<placeName ref="#Indus">Indus</placeName>, le <placeName
+                        ref="#Gange">Gange</placeName>, et un chemin de fer qui traverse l'Inde dans
+                     toute sa largeur, en se ramifiant sur son parcours, met <placeName
+                        ref="#Bombay">Bombay</placeName> à trois jours seulement de Calcutta.</p>
+                  <p>Le tracé de ce chemin de fer ne suit pas la ligne droite à travers l'Inde. La
+                     distance à vol d'oiseau n'est que de mille à onze cents milles, et des trains,
+                     animés d'une vitesse moyenne seulement, n'emploiraient pas trois jours à la
+                     franchir mais cette distance est accrue d'un tiers, au moins, par la corde que
+                     décrit le railway en s'élevant jusqu'à <placeName ref="#Allahabad"
+                        >Allahabad</placeName> dans le nord de la péninsule.</p>
+                  <p>Voici, en somme, le tracé à grands points du <emph rend="italic">Great Indian
+                        peninsular railway</emph>.En quittant l'ile de <placeName ref="#Bombay"
+                        >Bombay</placeName>, il traverse <placeName ref="#Salcette"
+                        >Salcette</placeName>, saute sur le continent en face de <placeName
+                        ref="#Tannah">Tannah</placeName>, franchit la chaîne des <placeName
+                        ref="#Ghates">Ghâtes occidentales</placeName>, court au nord-est jusqu'à
+                        <placeName ref="#Burhampour">Burhampour</placeName>, sillonne le territoire
+                     à peu près indépendant du <placeName ref="#Bundelkund">Bundelkund</placeName>,
+                     s'élève jusqu'à <placeName ref="#Allahabad">Allahabad</placeName>, s'infléchit
+                     vers l'est, rencontre le <placeName ref="#Gange">Gange</placeName> à <placeName
+                        ref="#Benares">Bénarès</placeName>, s'en écarte légèrement, et redescendant
+                     au sud-est par <placeName ref="#Burdivan">Burdivan</placeName> et la ville
+                     française de <placeName ref="#Chandernagor">Chandernagor</placeName>, il fait
+                     tète de ligne à <placeName ref="#Calcutta">Calcutta</placeName>.</p>
+                  <p>C'était à quatre heures et demie du soir que les passagers du <emph rend="italic"
+                        >Mongolia</emph> avaient débarqué à <placeName ref="#Bombay"
+                        >Bombay</placeName>, et le train de <placeName ref="#Calcutta"
+                        >Calcutta</placeName> partait à huit heures précises.</p>
+                  <p><persName ref="#Mr_Fogg" role="gentleman">Mr. Fogg</persName> prit donc congé
+                     de ses partenaires, quitta le paquebot, donna à <rs type="person"
+                        ref="#Passepartout">son domestique</rs> le détail de quelques emplettes à
+                     faire, <rs type="person_grammar" ref="#Passepartout">lui</rs> recommanda
+                     expressément de se trouver avant huit heures à la gare, et de son pas régulier
+                     qui battait la seconde comme le pendule d'une horloge astrono- mique, <rs
+                        type="person_grammar" ref="#Mr_Fogg">il</rs> se dirigea vers le bureau des
+                     passe-ports.</p>
+                  <p>Ainsi donc, des merveilles de <placeName ref="#Bombay">Bombay</placeName>, <rs
+                        type="person_grammar" ref="#Mr_Fogg">il</rs> ne songeait à rien voir, ni
+                     l'hôtel de ville, ni la magnifique bibliothèque, ni les forts, ni les docks, ni
+                     le marché au coton, ni les bazars, ni les mosquées, ni les synagogues, ni les
+                     églises arméniennes, ni la splendide pagode de <placeName ref="#Malebar-hill"
+                        >Malebar-hill</placeName>, ornée de deux tours polygones. <rs
+                        type="person_grammar" ref="#Mr_Fogg">Il</rs> ne contemplerait ni les
+                     chefs-d'œuvre d'<placeName ref="#Elephanta">Eléphanta</placeName>, ni ses
+                     mystérieuses hypogées, cachées au sudest de la rade, ni <placeName
+                        ref="#Kanherie">les grottes Kanhérie</placeName> de l'ile <placeName
+                        ref="#Salcette">Salcette</placeName>, admirables restes de l'architecture
+                     boudhiste.</p>
+                  <p>Non ! Rien. En sortant du bureau des passe-ports, <persName ref="#Mr_Fogg"
+                        role="gentleman">Phileas Fogg</persName> se rendit tranquillement à la gare,
+                     et là <rs type="person_grammar" ref="#Mr_Fogg">il</rs> se fit servir à dîner.
+                     Entre autres mets, le <persName ref="#Maitre_d_hotel" role="maitre_d_hotel"
+                        >maître d'hôtel</persName> crut devoir <rs type="person_grammar"
+                        ref="#Mr_Fogg">lui</rs> recommander une certaine gibelotte de « lapin du
+                     pays », dont <rs type="person_grammar" ref="#maitre_d_hotel">il</rs>
+                     <rs type="person_grammar" ref="#Mr_Fogg">lui</rs> dit merveille.</p>
+                  <p><persName ref="#Mr_Fogg" role="gentleman">Phileas Fogg</persName> accepta la
+                     gibelotte, la goûta consciencieusement mais en dépit de sa sauce épicée, <rs
+                        type="person_grammar" ref="#Mr_Fogg">il</rs> la trouva détestable.</p>
+                  <p><rs type="person_grammar" ref="#Mr_Fogg">Il</rs> sonna le <persName
+                        ref="#Maitre_d_hotel" role="maitre_d_hotel">maître d'hôtel</persName>. <said
+                        who="#Mr_Fogg" toWhom="#Maitre_d_hotel" aloud="true">« Monsieur,</said><seg
+                        type="incise"><rs type="person_grammar" ref="#maitre_d_hotel">lui</rs>
+                           dit-<rs type="person_grammar" ref="#Mr_Fogg">il</rs> en <rs
+                           type="person_grammar" ref="#maitre_d_hotel">le</rs> regardant
+                        fixement,</seg>
+                     <said who="#Mr_Fogg" toWhom="#Maitre_d_hotel" aloud="true">c'est du lapin,
+                        cela?</said>
+                     <said who="#Maitre_d_hotel" toWhom="#Mr_Fogg" aloud="true">Oui, mylord,</said>
+                     <seg type="incise">répondit effrontément <rs type="person"
+                           ref="maitre_d_hotel">le drôle</rs>,</seg><said who="#Maitre_d_hotel"
+                        toWhom="#Mr_Fogg" aloud="true"> du lapin des jungles.</said>
+                     <said who="#Mr_Fogg" toWhom="#Maitre_d_hotel" aloud="true">Et il n'a pas miaulé
+                        quand on l'a tué?</said>
+                     <said who="#Maitre_d_hotel" toWhom="#Mr_Fogg" aloud="true">Miaulé! Oh! mylord!
+                        un lapin! Je vous jure.</said>
+                     <said who="#Mr_Fogg" toWhom="#Maitre_d_hotel" aloud="true">Monsieur le
+                           <persName ref="#Maitre_d_hotel" role="maitre_d_hotel">maître
+                           d'hôtel</persName></said>,<seg type="incise"> reprit froidement <persName
+                           ref="#Mr_Fogg" role="gentleman">Fogg</persName>,</seg>
+                     <said who="#Mr_Fogg" toWhom="#Maitre_d_hotel" aloud="true">ne jurez pas et
+                        rappelez-vous ceci autrefois, dans l'<placeName ref="#Inde"
+                        >Inde</placeName>, les chats étaient considérés comme des animaux sacrés.
+                        C'était le bon temps.</said>
+                     <said who="#Maitre_d_hotel" toWhom="#Mr_Fogg" aloud="true">Pour les chats,
+                        mylord? </said><said who="#Mr_Fogg" toWhom="#Maitre_d_hotel" aloud="true">«
+                        Et aussi pour les voyageurs! »</said> Cette observation faite, <persName
+                        ref="#Mr_Fogg" role="gentleman">Mr. Fogg</persName> continua tranquillement
+                     à dîner.</p>
+                  <p>Quelques instants après <persName ref="#Mr_Fogg" role="gentleman">Mr.
+                        Fogg</persName>, l'agent <persName ref="Fix" role="inspector">Fix</persName>
+                     avait, <rs type="person_grammar" ref="#Fix">lui</rs> aussi, débarqué du <emph
+                        rend="italic">Mongolia</emph> et couru chez le directeur de la police de
+                        <placeName ref="#Bombay">Bombay</placeName>. <rs type="person_grammar"
+                        ref="#Fix">Il</rs> fit reconnaître sa qualité de détective, la mission dont
+                        <rs type="person_grammar" ref="#Fix">il</rs> était chargé, sa situation
+                     vis-à-vis de <rs type="person" ref="#Mr_Fogg">l'auteur présumé du
+                        vol</rs>. Avait-on reçu de Londres un mandat d'arrêt ? On n'aurait rien
+                     reçu. Et, en effet le mandat, parti après <persName ref="#Mr_Fogg"
+                        role="gentleman">Fogg</persName>, ne pouvait être encore arrivé.</p>
+                  <p><persName ref="Fix" role="inspector">Fix</persName> resta fort décontenancé.
+                        <rs type="person_grammar" ref="#Fix">Il</rs> voulut obtenir du directeur un
+                     ordre d'arrestation contre le sieur <persName ref="#Mr_Fogg" role="gentleman"
+                        >Fogg</persName>. Le directeur refusa. L'affaire regardait l'administration
+                     métropolitaine, et celle-ci seule pouvait légalement délivrer un mandat. Cette
+                     sévérité de principes, cette observance rigoureuse de la légalité est
+                     parfaitement explicable avec les mœurs anglaises, qui, en matière de liberté
+                     individuelle, n'admettent aucun arbitraire.</p>
+                  <p><persName ref="Fix" role="inspector">Fix</persName> n'insista pas et comprit
+                        qu'<rs type="person_grammar" ref="#Fix">il</rs> devait se résigner à
+                     attendre son mandat. Mais <rs type="person_grammar" ref="#Fix">il</rs> résolut
+                     de ne point perdre de vue <rs type="person" ref="#Mr_Fogg">son
+                        impénétrable coquin</rs>, pendant tout le temps que <rs
+                        type="person" ref="#Mr_Fogg">celui-ci</rs> demeurerait à <placeName
+                        ref="#Bombay">Bombay</placeName>. <rs type="person_grammar" ref="#Fix"
+                        >Il</rs> ne doutait pas que <persName ref="#Mr_Fogg" role="gentleman"
+                        >Phileas Fogg</persName> n'y séjournât,– et, on le sait, c'était aussi la
+                     conviction de <persName ref="#Passepartout" role="domestique"
+                        >Passepartout</persName>,-ce qui laisserait au mandat d'arrêt le temps
+                     d'arriver.</p>
+                  <p>Mais depuis les derniers ordres que lui avait donnés <rs type="person"
+                        ref="#Mr_Fogg">son maître</rs> en quittant le <emph rend="italic">Mongolia</emph>,
+                        <persName ref="#Passepartout" role="domestique">Passepartout</persName>
+                     avait bien compris qu'<rs type="person_grammar" ref="#Passepartout">il</rs> en
+                     serait, de <placeName ref="#Bombay">Bombay</placeName> comme de <placeName
+                        ref="#Suez">Suez</placeName> et de <placeName ref="#Paris"
+                     >Paris</placeName>, que le voyage ne finirait pas ici, qu'il se poursuivrait au
+                     moins jusqu'à <placeName ref="#Calcutta">Calcutta</placeName>, et peut-être
+                     plus loin. Et <rs type="person_grammar" ref="#Passepartout">il</rs> commença à
+                     se demander si ce pari de <persName ref="#Mr_Fogg" role="gentleman">Mr.
+                        Fogg</persName> n'était pas absolument sérieux, et si la fatalité ne
+                     l'entrainait pas, <rs type="person_grammar" ref="#Passepartout">lui</rs> qui
+                     voulait vivre en repos, à accomplir <title>le tour du monde en quatre-vingts
+                        jours</title>!</p>
+                  <p>En attendant, et après avoir fait acquisition de quelques chemises et
+                     chaussettes, <rs type="person_grammar" ref="#Passepartout">il</rs> se promenait
+                     dans les rues de <placeName ref="#Bombay">Bombay</placeName>. Il y avait grand
+                     concours de populaire et, au milieu d'Européens de toutes nationalités, des
+                     Persans à bonnets pointus, des Bunhyas à turbans ronds, des Sindes à bonnets
+                     carrés, des Arméniens en longues robes, des Parsis à mitra noire. C'était
+                     précisément une fète célébrée par ces Parsis ou Guèbres, descendants directs
+                     des sectateurs de Zoroastre, qui sont les plus industrieux, les plus.
+                     civilisés, les plus intelligents, les plus austères des Indous, Tare à laquelle
+                     appartiennent actuellement les riches négociants indigènes de Bomhay. Ce
+                     jour-là, ils célébraient une sorte de carnaval religieux, avec processions et
+                     divertissements, dans lesquels figuraient des bayadères vêtues de gazes rosés
+                     brochées d'or et d'argent, qui, au son des violes et au bruit des lam-tams,
+                     dansaient merveilleusement, et avec une décence parfaite, d'ailleurs.</p>
+                  <p>Si <persName ref="#Passepartout" role="domestique">Passepartout</persName>
+                     regardait ces curieuses cérémonies, si ses yeux et ses oreilles s'ouvraient
+                     démesurément pour voir et entendre, si son air, sa physionomie était bien celle
+                     du « booby » le plus neuf qu'on pût imaginer, il est superflu d'y insister
+                     ici.</p>
+                  <p>Malheureusement pour <rs type="person_grammar" ref="#Passepartout">lui</rs> et
+                     pour <rs type="person" ref="#Mr_Fogg">son maître</rs>, dont <rs
+                        type="person_grammar" ref="#Passepartout">il</rs> risqua de compromettre le
+                     voyage, sa curiosité l'entraina plus loin qu'il ne convenait.</p>
+                  <p>En effet, après avoir entrevu ce carnaval Parsi, <persName ref="#Passepartout"
+                        role="domestique">Passepartout</persName> se dirigeait vers la gare, quand,
+                     passant devant l'admirable pagode de <placeName ref="#Malebar"
+                        >Malebar-hill</placeName>, <rs type="person_grammar" ref="#Passepartout"
+                        >il</rs> eut la malencontreuse idée d'en visiter l'intérieur.</p>
+                  <p><rs type="person_grammar" ref="#Passepartout">Il</rs> ignorait deux choses,
+                     d'abord que l'entrée de certaines pagodes indoues est formellement interdite
+                     aux chrétiens, et ensuite que les croyants eux-mêmes ne peuvent y pénétrer sans
+                     avoir laissé leur chaussure à la porte. Il faut remarquer ici que, par raison
+                     de saine politique, le gouvernement anglais, respectant et faisant respecter
+                     jusque dans ses plus insignifiants détails la religion du pays, punit
+                     sévèrement quiconque enviole les pratiques.</p>
+                  <p><persName ref="#Passepartout" role="domestique">Passepartout</persName>, entré
+                     là, sans penser à mal, comme un simple touriste, admirait, à l'intérieur de
+                        <placeName ref="#Malebar">Malebar-hill</placeName>, ce clinquant éblouissant
+                     de l'ornementation brahmanique, quand soudain <rs type="person_grammar"
+                        ref="#Passepartout">il</rs> fut renversé sur les dalles sacrées. Trois
+                     prêtres, le regard plein de fureur, se précipitèrent sur <rs
+                        type="person_grammar" ref="#Passepartout">lui</rs>, arrachèrent ses souliers
+                     et ses chaussettes, et commencèrent à <rs type="person_grammar"
+                        ref="#Passepartout">le</rs> rouer de coups, en proférant des cris
+                     sauvages.</p>
+                  <p><rs type="person" ref="#Passepartout">Le Français</rs>, vigoureux et
+                     agile, se releva vivement; d'un coup de poing et d'un coup de pied, <rs
+                        type="person_grammar" ref="#Passepartout">il</rs> renversa deux de ses
+                     adversaires, fort empêtrés dans leurs longues robes, et s'élançant hors de la
+                     pagode de toute la vitesse de ses jambes, <rs type="person_grammar"
+                        ref="#Passepartout">il</rs> eut bientôt distancé le troisième Indou, qui
+                     s'était jeté sur ses traces, en ameutant la foule.</p>
+                  <p>A huit heures moins cinq, quelques minutes seulement avant le départ du train,
+                     sans chapeau, pieds nus, ayant perdu dans la bagarre le paquet contenant ses
+                     empiètes, <persName ref="#Passepartout" role="domestique"
+                        >Passepartout</persName> arrivait à la gare du <emph rend="it">Great Indian
+                        peninsular raihvay</emph>.</p>
+                  <p><persName ref="Fix" role="inspector">Fix</persName> était là, sur le quai
+                     d'embarquement. <rs type="person_grammar" ref="#Fix">Il</rs> avait suivi le
+                     sieur <persName ref="#Mr_Fogg" role="gentleman">Fogg</persName> à la gare. <rs
+                        type="person_grammar" ref="#Fix">Il</rs> avait compris que <rs
+                        type="person" ref="#Mr_Fogg">ce coquin</rs> allait quitter
+                        <placeName ref="#Bombay">Bombay</placeName>. Son parti fut aussitôt pris de
+                        <rs type="person_grammar" ref="#Mr_Fogg">l'</rs>accompagner jusqu'à
+                        <placeName ref="#Calcutta">Calcutta</placeName> et plus loin s'il le
+                     fallait. <persName ref="#Passepartout" role="domestique"
+                        >Passepartout</persName> ne vit pas <persName ref="Fix" role="inspector"
+                        >Fix</persName> qui se tenait dans l'ombre, mais <persName ref="Fix"
+                        role="inspector">Fix</persName> entendit le récit de ses aventures, que
+                        <persName ref="#Passepartout" role="domestique">Passepartout</persName>
+                     narra en peu de mots à <rs type="person" ref="#Mr_Fogg">son
+                     maître</rs></p>
+                  <p><said who="#Mr_Fogg" toWhom="#Passepartout" aloud="true">« J'espère que cela ne
+                        vous arrivera plus. »</said> répondit simplement <persName ref="#Mr_Fogg"
+                        role="gentleman">Phileas Fogg</persName>, en prenant place dans un des
+                     wagons du train.</p>
+                  <p><rs type="person" ref="#Passepartout">Le pauvre garçon</rs>, pieds nus
+                     et tout déconfit, suivit <rs type="person" ref="#Mr_Fogg">son
+                        maître</rs> sans mot dire.</p>
+                  <p><persName ref="Fix" role="inspector">Fix</persName> allait monter dans un wagon
+                     séparé, quand une pensée le retint et modifia subitement son projet de
+                     départ.</p>
+                  <p><said who="#Fix" aloud="false">« Non, je reste, <seg type="incise">se
+                           dit-il.</seg> Un délit commis sur le territoire indien. Je tiens <rs
+                           type="person" ref="#Mr_Fogg">mon homme</rs> ».</said></p>
+                  <p>En ce moment, la locomotive lânca un vigoureux sifflet, et le train disparut
+                     dans la nuit. </p>
+               </div>
+            </div>
+         </div>
+      </body>
+   </text>
+   <standOff>
+      <listRelation type="work">
+         <relation name="maitre" active="#Mr_Fogg" passive="#Passepartout"/>
+      </listRelation>
+   </standOff>
+</TEI>
